@@ -1,0 +1,63 @@
+.swiper-container {
+    width: 100%;
+    height: 150px;
+    position: relative ;
+    overflow: hidden !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  
+.swiper-container-vertical>.swiper-pagination-bullets {
+    right:calc(50% - 30px) !important;
+    bottom: 8% !important;
+    top: auto !important;
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: white;
+    width: 11px;
+    height: 11px;
+    opacity: 1;
+    transition: var(--transition) ;
+}
+@media screen and (max-width: 500px) {
+  .swiper-container-vertical>.swiper-pagination-bullets {
+    right:calc(50% - 20px) !important;
+    bottom: 20% !important;
+    width: 40px;
+}
+  .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+}
+}
+
+.swiper-pagination-bullet-active{
+   background: var(--primary) !important ;
+   transform: scale(1.4)  !important;
+}
+
+
+
+
+
+
